@@ -12,7 +12,7 @@ const Home: NextPage = () => {
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet"></link>
       </Head>
 
-      <main className="p-8 mt-12 md:mt-16 text-md md:text-lg bg-neutral-900">
+      <main className="p-4 mt-12 md:mt-16 text-md md:text-lg bg-neutral-900">
         <div>
             <h1 className='text-3xl md:text-4xl'>hey, i&apos;m <span className='bg-gradient-to-r from-blue-500 to-blue-300 text-transparent bg-clip-text'>danny</span>.</h1>
             <p className='mt-6'>
