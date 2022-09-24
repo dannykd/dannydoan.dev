@@ -57,7 +57,7 @@ const Project = ({ title, description, gh_url, proj_url }: Props) => {
             className="z-10 mx-4 flex h-full border-t border-white/20"
           >
             <div className="flex flex-col space-y-4 px-2 py-4">
-              <p className="flex-1 select-none text-white/80">{description}</p>
+              <p className="flex-1 select-none text-white">{description}</p>
 
               {/* links to proj and gh */}
               <div className="flex justify-between">
