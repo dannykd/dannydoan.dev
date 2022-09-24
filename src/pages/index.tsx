@@ -1,83 +1,59 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
+import Project from "./components/Project";
 
 const Home: NextPage = () => {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2">
+    <div className="flex min-h-screen flex-col justify-center py-2">
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Danny Doan</title>
+        <link rel="icon" href="https://avatars.githubusercontent.com/u/92613890?s=400&u=e0047c360a4ec70d3e487df52452decafbce4351&v=4" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet"></link>
       </Head>
 
-      <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
-        <h1 className="text-6xl font-bold">
-          Welcome to{" "}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Next.js!
-          </a>
-        </h1>
-        <p className="mt-3 text-2xl">
-          Get started by editing{" "}
-          <code className="rounded-md bg-gray-100 p-3 font-mono text-lg">
-            pages/index.tsx
-          </code>
-        </p>
-
-        <div className="mt-6 flex max-w-4xl flex-wrap items-center justify-around sm:w-full">
-          <a
-            href="https://nextjs.org/docs"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Documentation &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Find in-depth information about Next.js features and its API.
+      <main className="max-w-3xl mx-auto p-8 mt-12 md:mt-16 text-md md:text-lg bg-neutral-900">
+        <div>
+            <h1 className='text-3xl md:text-4xl'>hey, i&apos;m <span className='bg-gradient-to-r from-blue-500 to-blue-300 text-transparent bg-clip-text'>danny</span>.</h1>
+            <p className='mt-6'>
+              i&apos;m a california-based developer studying computer science @uci. i&apos;m a big fan of all things
+              full stack whether it be writing RESTful apis in express.js or designing a responsive front end with <span className='line-through'>react.js</span> next.js.
+              i like thrillers, sushi, and the la rams.
             </p>
-          </a>
 
-          <a
-            href="https://nextjs.org/learn"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Learn &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Learn about Next.js in an interactive course with quizzes!
-            </p>
-          </a>
+            <p className='mt-6'>currently:</p>
+            <p>[cs @uci]</p>
+            
+            
+            <div className='flex mt-6 space-x-4 md:space-x-8 underline'>
+              <a href="https://www.linkedin.com/in/danny-doan/">linkedin↗️</a>
+              <a href="https://github.com/dkdoan">github↗️</a>
+              <a href="mailto:dannykdoan@gmail.com">email↗️</a>            
+            </div>
+         </div>
+        
+         <h1 className="mt-14 md:mt-16 mb-3 md:mb-4">&lt;projects&gt;</h1>
+         <div className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
+          <Project 
+            title="aniwatch"
+            description="social media web app that allows users to share and rate what anime they're currently watching.
+            uses data from anilist's graphql api."
+           
+          ></Project>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Examples &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Discover and deploy boilerplate example Next.js projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Deploy &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+          <Project 
+            title="skolr"
+            description="web app that allows users to create and log study sessions following pomodoro 
+            techniques."
+           
+          ></Project>
         </div>
-      </main>
 
-      <footer className="flex h-24 w-full items-center justify-center border-t">
-        <a
-          className="flex items-center justify-center gap-2"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{" "}
-          <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-        </a>
-      </footer>
+
+
+
+      </main>
+    
     </div>
   );
 };

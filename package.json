@@ -6,9 +6,13 @@
     "start": "next start"
   },
   "dependencies": {
+    "@heroicons/react": "^2.0.11",
+    "framer-motion": "^7.3.6",
+    "heroicons": "^2.0.11",
     "next": "latest",
     "react": "18.1.0",
-    "react-dom": "18.1.0"
+    "react-dom": "18.1.0",
+    "react-icons": "^4.4.0"
   },
   "devDependencies": {
     "@types/node": "17.0.35",

@@ -1,18 +1,4 @@
-# Next.js starter template
+# Portfolio site
 
-A starter template for my Next.js projects because I am lazy 🙂
+Built with Nextjs and TailwindCSS -> Deployed with Vercel
 
-## How to use
-```
-pnpm create next-app YOUR_PROJECT_NAME -e https://github.com/clxmente/next
-# or
-yarn create next-app YOUR_PROJECT_NAME -e https://github.com/clxmente/next
-# or
-npx create-next-app YOUR_PROJECT_NAME -e https://github.com/clxmente/next
-```
-
-## Features
-- Tailwind CSS
-- Typescript
-- Prettier with the tailwind plugin to auto format class names
-- thats about it 🙂
