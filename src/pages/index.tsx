@@ -12,7 +12,7 @@ const Home: NextPage = () => {
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet"></link>
       </Head>
 
-      <main className="p-4 mt-12 md:mt-16 text-md md:text-lg bg-[#0F0E0E]">
+      <main className="p-4 mt-12 md:mt-16 text-md md:text-lg bg-[#0F0E0E] min-h-full">
         <div>
             <h1 className='text-3xl md:text-4xl'>hey, i&apos;m <span className='text-blue-400'>danny</span>.</h1>
             <p className='mt-6'>
@@ -20,10 +20,6 @@ const Home: NextPage = () => {
               full stack whether it be writing RESTful apis in express.js or designing a responsive front end with <span className='line-through'>react.js</span> next.js.
               i like thrillers, sushi, and the la rams.
             </p>
-
-            <p className='mt-6'>currently:</p>
-            <p>[cs @uci]</p>
-            
             
             <div className='flex mt-6 space-x-4 md:space-x-8 underline'>
               <a href="https://www.linkedin.com/in/danny-doan/">linkedin↗️</a>
@@ -38,22 +34,16 @@ const Home: NextPage = () => {
             title="aniwatch"
             description="social media web app that allows users to share and rate what anime they're currently watching.
             uses data from anilist's graphql api."
-           
           ></Project>
 
           <Project 
             title="skolr"
             description="web app that allows users to create and log study sessions following pomodoro 
             techniques."
-           
           ></Project>
+          
         </div>
-
-
-
-
-      </main>
-    
+      </main>      
     </div>
   );
 };
