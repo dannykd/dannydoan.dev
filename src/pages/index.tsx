@@ -5,7 +5,7 @@ import Project from "./components/Project";
 
 const Home: NextPage = () => {
   return (
-    <div className="mx-auto max-w-4xl space-y-8 py-10 px-5 lg:px-">
+    <div className="">
       <Head>
         <title>Danny Doan</title>
         <link rel="icon" href="https://avatars.githubusercontent.com/u/92613890?s=400&u=e0047c360a4ec70d3e487df52452decafbce4351&v=4" />
@@ -14,7 +14,7 @@ const Home: NextPage = () => {
 
       <main className="p-4 mt-12 md:mt-16 text-md md:text-lg bg-neutral-900">
         <div>
-            <h1 className='text-3xl md:text-4xl'>hey, i&apos;m <span className='bg-gradient-to-r from-blue-500 to-blue-300 text-transparent bg-clip-text'>danny</span>.</h1>
+            <h1 className='text-3xl md:text-4xl'>hey, i&apos;m <span className='text-blue-400'>danny</span>.</h1>
             <p className='mt-6'>
               i&apos;m a california-based developer studying computer science @uci. i&apos;m a big fan of all things
               full stack whether it be writing RESTful apis in express.js or designing a responsive front end with <span className='line-through'>react.js</span> next.js.
