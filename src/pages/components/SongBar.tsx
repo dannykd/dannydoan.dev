@@ -1,12 +1,13 @@
 import Link from "next/link";
 import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
-import { Tab, Transition } from "@headlessui/react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
+import { Menu } from "@headlessui/react";
+import { Bars3Icon, XMarkIcon, SunIcon, MoonIcon } from "@heroicons/react/24/solid";
 import { withRouter } from 'next/router'
 import { SiSpotify } from "react-icons/si";
 import { useLanyardWs } from "use-lanyard";
 import {useTheme} from 'next-themes'
+import MenuLink from './MenuLink'
 
 
 const SongBar = () => {
@@ -29,13 +30,31 @@ const SongBar = () => {
               Not Playing Anything <span><SiSpotify className="h-4 w-4 md:h-5 md:w-5 flex-shrink-0" /></span>
           </p>
 
-          <button onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
-              {/* eventually add a thing to toggle light/dark mode*/}
-              { theme === 'dark'
-                ? <p className="bg-blue-400 rounded-xl p-2 mb-2 text-2xl md:text-3xl">☀️</p>
-                : <p className="bg-blue-600 rounded-xl p-2 mb-2 text-lg md:text-2xl">🌙</p>
-              }
-          </button>
+          <div className="flex space-x-2">
+            <button onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
+                {/* eventually add a thing to toggle light/dark mode*/}
+                { theme === 'dark'
+                  ? <SunIcon className="h-12 w-12 bg-blue-400 text-yellow-400 p-2 rounded-xl"/>
+                  : <MoonIcon className="h-12 w-12 bg-blue-700 text-yellow-400 p-2 rounded-xl"/>
+                }
+            </button>
+            {/*<button>
+              <Menu as="div" className="relative inline-block text-left">
+                  <Menu.Button className="inline-flex rounded-md py-2 text-sm font-medium text-white hover:bg-opacity-30
+                  focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
+                      <Bars3Icon className="h-11 w-11 outline outline-1 dark:outline-white dark:text-white text-black outline-black p-2 rounded-xl"/>
+                  </Menu.Button>
+              
+                  <Menu.Items className="absolute right-0 mt-2 w-56 md:w-72 origin-top-right divide-y divide-gray-100 rounded-md 
+                  shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none dark:bg-white">
+                      <div className="px-1 py-1 ">
+                          <MenuLink pageName="/experience" link="../index" ></MenuLink>
+                          <MenuLink pageName="/contact" link="../index" ></MenuLink>
+                      </div>
+                  </Menu.Items>
+              </Menu>
+              </button>*/}
+          </div>
         
       </div>
       </motion.div>
@@ -61,14 +80,31 @@ const SongBar = () => {
               <SiSpotify className="h-4 w-4 md:h-5 md:w-5 flex-shrink-0 text-green-400" /></span>
         </p>
       </a>
-
-      <button onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
+      <div className="flex space-x-2">
+          <button onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
               {/* eventually add a thing to toggle light/dark mode*/}
               { theme === 'dark'
-                ? <p className="bg-blue-400 rounded-xl p-2 mb-2 text-2xl md:text-3xl">☀️</p>
-                : <p className="bg-blue-600 rounded-xl p-2 mb-2 text-lg md:text-2xl">🌙</p>
+                ? <SunIcon className="h-12 w-12 bg-blue-400 text-yellow-400 p-2 rounded-xl"/>
+                : <MoonIcon className="h-12 w-12 bg-blue-700 text-yellow-400 p-2 rounded-xl"/>
               }
           </button>
+         {/* <button>
+            <Menu as="div" className="relative inline-block text-left">
+                <Menu.Button className="inline-flex rounded-md py-2 text-sm font-medium text-white hover:bg-opacity-30
+                 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
+                    <Bars3Icon className="h-11 w-11 outline outline-1 dark:outline-white dark:text-white text-black outline-black p-2 rounded-xl"/>
+                </Menu.Button>
+            
+                <Menu.Items className="absolute right-0 mt-2 w-56 md:w-72 origin-top-right divide-y divide-gray-100 rounded-md 
+                shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none dark:bg-white">
+                    <div className="px-1 py-1 ">
+                        <MenuLink pageName="/experience" link="../index" ></MenuLink>
+                        <MenuLink pageName="/contact" link="../index" ></MenuLink>
+                    </div>
+                </Menu.Items>
+            </Menu>
+          </button> */}
+      </div>
     </div>
 
     </motion.div>
