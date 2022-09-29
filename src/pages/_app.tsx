@@ -1,14 +1,14 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import { AnimatePresence, motion } from 'framer-motion'
-import Navbar from './components/Navbar'
+import SongBar from './components/SongBar'
 
 
 function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <div className='bg-[#0F0E0E] text-white mx-auto max-w-4xl space-y-8 py-6 px-5 lg:px-0'>
-       <Navbar></Navbar>
+       <SongBar></SongBar>
         <AnimatePresence>
           <motion.div
           initial={{ y: 10, opacity: 0 }}
