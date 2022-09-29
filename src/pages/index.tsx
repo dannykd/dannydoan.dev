@@ -44,7 +44,9 @@ const Home: NextPage = () => {
           ></Project>
           
         </div>
-      </main>      
+        <footer className='absolute bottom-0 left-0 right-0 flex justify-center pb-4 text-sm md:text-base'>{"/* built with <3 by me (danny) */"}</footer>     
+      </main> 
+
     </div>
   );
 };

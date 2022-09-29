@@ -19,7 +19,7 @@ function MyApp({ Component, pageProps }: AppProps) {
             exit={{ y: 10, opacity: 0 }}>
               <Component {...pageProps} />
             </motion.div>
-          </AnimatePresence> 
+          </AnimatePresence>
       </div>
     </ThemeProvider>
   )

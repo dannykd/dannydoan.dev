@@ -11,10 +11,8 @@ import {useTheme} from 'next-themes'
 
 const SongBar = () => {
   
-  
   const {theme, setTheme} = useTheme()
   const data = useLanyardWs('509537385231417385')
-
 
   if (!data?.spotify) {
     return (
@@ -44,8 +42,6 @@ const SongBar = () => {
     )
   }
 
-  
-
   return (
     <motion.div
     initial={{ y: -10, opacity: 0 }}
@@ -54,7 +50,6 @@ const SongBar = () => {
     className="sticky top-0 z-50"
     >
 
-    
     <div className="mx-auto max-w-4xl text-xs md:text-sm flex justify-between text-left border-b border-neutral-300
        dark:text-neutral-300 bg-neutral-100 dark:bg-[#0F0E0E]">
       <a target="_blank"
@@ -75,10 +70,6 @@ const SongBar = () => {
               }
           </button>
     </div>
-
-
-
-
 
     </motion.div>
   );
