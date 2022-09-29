@@ -2,23 +2,26 @@ import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import { AnimatePresence, motion } from 'framer-motion'
 import SongBar from './components/SongBar'
+import { ThemeProvider } from 'next-themes'
 
 
 function MyApp({ Component, pageProps }: AppProps) {
 
   return (
-    <div className='bg-[#0F0E0E] text-white mx-auto max-w-4xl space-y-8 py-6 px-5 lg:px-0'>
-       <SongBar></SongBar>
-        <AnimatePresence>
-          <motion.div
-          initial={{ y: 10, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.5 }}
-          exit={{ y: 10, opacity: 0 }}>
-            <Component {...pageProps} />
-          </motion.div>
-        </AnimatePresence> 
-    </div>
+    <ThemeProvider attribute="class">
+      <div className='bg-neutral-100 dark:bg-[#0F0E0E] dark:text-white space-y-8 py-6 px-5 lg:px-0 min-h-screen'>
+        <SongBar></SongBar>
+          <AnimatePresence>
+            <motion.div
+            initial={{ y: 10, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            exit={{ y: 10, opacity: 0 }}>
+              <Component {...pageProps} />
+            </motion.div>
+          </AnimatePresence> 
+      </div>
+    </ThemeProvider>
   )
 }
 

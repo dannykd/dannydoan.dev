@@ -10,6 +10,7 @@ specifiers:
   framer-motion: ^7.3.6
   heroicons: ^2.0.11
   next: latest
+  next-themes: ^0.2.1
   postcss: ^8.4.14
   prettier: ^2.7.1
   prettier-plugin-tailwindcss: ^0.1.13
@@ -26,6 +27,7 @@ dependencies:
   framer-motion: 7.3.6_ef5jwxihqo6n7gxfmzogljlgcm
   heroicons: 2.0.11
   next: 12.3.1_ef5jwxihqo6n7gxfmzogljlgcm
+  next-themes: 0.2.1_y3vnqhrq6kacn7e7j5j4tjxiry
   react: 18.1.0
   react-dom: 18.1.0_react@18.1.0
   react-icons: 4.4.0_react@18.1.0
@@ -599,6 +601,18 @@ packages:
     resolution: {integrity: sha512-MqBkQh/OHTS2egovRtLk45wEyNXwF+cokD+1YPf9u5VfJiRdAiRwB2froX5Co9Rh20xs4siNPm8naNotSD6RBw==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
+
+  /next-themes/0.2.1_y3vnqhrq6kacn7e7j5j4tjxiry:
+    resolution: {integrity: sha512-B+AKNfYNIzh0vqQQKqQItTS8evEouKD7H5Hj3kmuPERwddR2TxvDSFZuTj6T7Jfn1oyeUyJMydPl1Bkxkh0W7A==}
+    peerDependencies:
+      next: '*'
+      react: '*'
+      react-dom: '*'
+    dependencies:
+      next: 12.3.1_ef5jwxihqo6n7gxfmzogljlgcm
+      react: 18.1.0
+      react-dom: 18.1.0_react@18.1.0
+    dev: false
 
   /next/12.3.1_ef5jwxihqo6n7gxfmzogljlgcm:
     resolution: {integrity: sha512-l7bvmSeIwX5lp07WtIiP9u2ytZMv7jIeB8iacR28PuUEFG5j0HGAPnMqyG5kbZNBG2H7tRsrQ4HCjuMOPnANZw==}

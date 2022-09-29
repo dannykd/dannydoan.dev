@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import Project from "./components/Project";
+import Script from 'next/script'
 
 const Home: NextPage = () => {
   return (
@@ -12,9 +13,9 @@ const Home: NextPage = () => {
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet"></link>
       </Head>
 
-      <main className="p-4 mt-8 md:mt-12 text-md md:text-lg bg-[#0F0E0E] min-h-full">
+      <main className="mx-auto max-w-4xl p-4 mt-8 md:mt-12 text-md md:text-lg min-h-full">
         <div>
-            <h1 className='text-3xl md:text-4xl'>hey, i&apos;m <span className='text-blue-400'>danny</span>.</h1>
+            <h1 className='text-3xl md:text-4xl'>hey, i&apos;m <span className='text-blue-600 dark:text-blue-400'>danny</span>.</h1>
             <p className='mt-6'>
               i&apos;m a california-based developer studying computer science @uci. i&apos;m a big fan of all things
               full stack whether it be writing RESTful apis in express.js or designing a responsive front end with <span className='line-through'>react.js</span> next.js.

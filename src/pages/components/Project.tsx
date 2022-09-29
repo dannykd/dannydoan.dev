@@ -41,7 +41,7 @@ const Project = ({ title, description, gh_url, proj_url }: Props) => {
         onClick={toggle}
         className="z-10 flex select-none items-center p-4 font-medium"
       >
-        <div className="flex flex-1">
+        <div className="flex flex-1 text-white">
           <p>{title}</p>
         </div>
         <motion.div animate={{ rotate: open ? 90 : 0 }}>
