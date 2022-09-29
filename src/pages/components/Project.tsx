@@ -45,7 +45,7 @@ const Project = ({ title, description, gh_url, proj_url }: Props) => {
           <p>{title}</p>
         </div>
         <motion.div animate={{ rotate: open ? 90 : 0 }}>
-          <ChevronRightIcon className="h-5 w-5" />
+          <ChevronRightIcon className="h-5 w-5 text-white" />
         </motion.div>
       </button>
       <AnimatePresence>
