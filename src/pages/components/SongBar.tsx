@@ -6,13 +6,20 @@ import { Bars3Icon, XMarkIcon, SunIcon, MoonIcon } from "@heroicons/react/24/sol
 import { withRouter } from 'next/router'
 import { SiSpotify } from "react-icons/si";
 import { useLanyardWs } from "use-lanyard";
-import {useTheme} from 'next-themes'
+import {useTheme } from 'next-themes'
+import { useEffect } from 'react'
+
 
 
 const SongBar = () => {
   
   const {theme, setTheme} = useTheme()
   const data = useLanyardWs('509537385231417385')
+
+  useEffect(() => {
+    setTheme('dark')
+  }, [])
+
 
 
   if (!data?.spotify) {
