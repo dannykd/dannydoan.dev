@@ -34,8 +34,8 @@ const SongBar = () => {
           <button onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
               {/* eventually add a thing to toggle light/dark mode*/}
               { theme === 'dark'
-                ? <p className="bg-blue-400 rounded-xl p-2 mb-2 text-2xl">☀️</p>
-                : <p className="bg-blue-600 rounded-xl p-2 mb-2 text-lg">🌙</p>
+                ? <p className="bg-blue-400 rounded-xl p-2 mb-2 text-2xl md:text-3xl">☀️</p>
+                : <p className="bg-blue-600 rounded-xl p-2 mb-2 text-lg md:text-2xl">🌙</p>
               }
           </button>
         
@@ -70,8 +70,8 @@ const SongBar = () => {
       <button onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
               {/* eventually add a thing to toggle light/dark mode*/}
               { theme === 'dark'
-                ? <p className="bg-blue-400 rounded-xl p-2 mb-2 text-2xl">☀️</p>
-                : <p className="bg-blue-600 rounded-xl p-2 mb-2 text-lg">🌙</p>
+                ? <p className="bg-blue-400 rounded-xl p-2 mb-2 text-2xl md:text-3xl">☀️</p>
+                : <p className="bg-blue-600 rounded-xl p-2 mb-2 text-lg md:text-2xl">🌙</p>
               }
           </button>
     </div>
