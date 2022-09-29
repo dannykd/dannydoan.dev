@@ -48,7 +48,7 @@ const SongBar = () => {
     >
 
     
-    <div className="text-sm flex justify-between md:text-md font-medium text-left border-b border-neutral-300 text-neutral-300 bg-[#0F0E0E]">   
+    <div className="text-sm flex justify-between md:text-md font-medium text-left border-b border-neutral-400 text-neutral-400 bg-[#0F0E0E]">   
       <a target="_blank"
         rel="noreferrer"
         href={`https://open.spotify.com/track/${data.spotify.track_id}`}
