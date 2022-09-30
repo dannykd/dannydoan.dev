@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import Project from "./components/Project";
+import Experience from "./components/Experience";
 import Script from 'next/script'
 
 const Home: NextPage = () => {
@@ -42,8 +43,23 @@ const Home: NextPage = () => {
             description="web app that allows users to create and log study sessions following pomodoro 
             techniques."
           ></Project>
-          
         </div>
+
+        <h1 className="mt-14 md:mt-16 mb-3 md:mb-4">&lt;experience&gt;</h1>
+        <div className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
+          <Experience
+            role="software engineer intern"
+            img="https://pbs.twimg.com/profile_images/1473756532827246593/KRgw2UkV_400x400.jpg"
+            description="worked on the RDS engine team. created a dashboard for engine teams
+              (orcalce, postgres, mysql, etc) to track and monitor 
+              engine updates as they propagate to customer instances"
+            timespan="june 2022 - sep 2022"
+          ></Experience>
+          
+        
+        </div>
+
+
       </main> 
 
     </div>
