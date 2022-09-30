@@ -55,11 +55,7 @@ const Home: NextPage = () => {
               engine updates as they propagate to customer instances"
             timespan="june 2022 - sep 2022"
           ></Experience>
-          
-        
         </div>
-
-
       </main> 
 
     </div>

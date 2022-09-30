@@ -21,6 +21,7 @@ function MyApp({ Component, pageProps }: AppProps) {
             </motion.div>
           </AnimatePresence>
       </div>
+      <footer className="flex justify-center text-xs md:text-sm p-4">{"/* built with <3 by me (danny) */"} </footer>
     </ThemeProvider>
   )
 }

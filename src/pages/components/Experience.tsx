@@ -8,7 +8,7 @@ interface ExperienceProps{
     description: string
 }
 
-const Experience = ({ img, role, timespan, description }: Props) => {
+const Experience = ({ img, role, timespan, description }: ExperienceProps) => {
 
     return (
         <div className="dark:bg-black bg-white outline outline-1 dark:outline-white hover:outline-blue-400 rounded-lg px-2 p-4 text-base">
