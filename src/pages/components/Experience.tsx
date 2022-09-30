@@ -1,4 +1,4 @@
-
+import Image from "next/image"
 
 
 interface ExperienceProps{
@@ -11,9 +11,9 @@ interface ExperienceProps{
 const Experience = ({ img, role, timespan, description }: ExperienceProps) => {
 
     return (
-        <div className="dark:bg-black bg-white outline outline-1 dark:outline-white hover:outline-blue-400 rounded-lg px-2 p-4 text-base">
+        <div className="dark:bg-black bg-white ring-1 ring-black dark:ring-white hover:ring-blue-400 rounded-lg hover:outline-blue-400 px-2 p-4 text-base">
             <div className="flex space-x-4 border-b border-black dark:border-white px-2">
-                <img className="rounded-lg mb-2 outline outline-white outline-1" src={img} height="48" width="48"></img>
+                <Image className="mb-2 rounded-lg" src={img} height="48" width="48" layout="fixed"></Image>
                 <div className="flex flex-col mb-2 space-y-2">
                     <h1 className="text-blue-white">{role}</h1>
                     <p className="text-sm">{timespan}</p>
