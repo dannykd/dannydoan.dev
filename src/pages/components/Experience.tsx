@@ -11,11 +11,11 @@ interface ExperienceProps{
 const Experience = ({ img, role, timespan, description }: ExperienceProps) => {
 
     return (
-        <div className="dark:bg-black bg-white ring-1 ring-black dark:ring-white hover:ring-blue-400 rounded-lg hover:outline-blue-400 px-2 p-4 text-base">
+        <div className="dark:bg-neutral-900 bg-white ring-1 ring-black dark:ring-white dark:hover:ring-blue-400 hover:ring-blue-400 rounded-lg hover:outline-blue-400 px-2 p-4 text-base">
             <div className="flex space-x-4 border-b border-black dark:border-white px-2">
                 <Image className="mb-2 rounded-lg" src={img} height="48" width="48" layout="fixed"></Image>
                 <div className="flex flex-col mb-2 space-y-2">
-                    <h1 className="text-blue-white">{role}</h1>
+                    <h1 className="">{role}</h1>
                     <p className="text-sm">{timespan}</p>
                 </div>
             </div>
