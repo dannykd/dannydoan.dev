@@ -33,7 +33,7 @@ const SongBar = () => {
 
       <div className="mx-auto max-w-4xl text-xs md:text-sm flex justify-between font-medium text-left border-b
        border-neutral-300 dark:text-neutral-300 bg-neutral-100 dark:bg-[#0F0E0E]">   
-          <p className="py-3 md:px-4 px-4 rounded-t-lg border-b-2 border-transparent focus:text-gray-600 focus:border-gray-300">
+          <p className="py-3 md:px-4 px-2 rounded-t-lg border-b-2 border-transparent focus:text-gray-600 focus:border-gray-300">
               Not Playing Anything <span><SiSpotify className="h-4 w-4 md:h-5 md:w-5 flex-shrink-0" /></span>
           </p>
 
@@ -41,8 +41,8 @@ const SongBar = () => {
           <button onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
                 {/* eventually add a thing to toggle light/dark mode*/}
                 { theme === 'dark' || !theme
-                  ? <SunIcon className="h-12 w-12 bg-blue-400 text-yellow-400 p-2 rounded-xl"/>
-                  : <MoonIcon className="h-12 w-12 bg-blue-700 text-yellow-400 p-2 rounded-xl"/>
+                  ? <SunIcon className="h-12 w-12 bg-blue-400 text-white p-2 rounded-xl"/>
+                  : <MoonIcon className="h-12 w-12 bg-blue-700 text-white p-2 rounded-xl"/>
                 }
           </button>
             {/*<button>
@@ -82,7 +82,7 @@ const SongBar = () => {
         rel="noreferrer"
         href={`https://open.spotify.com/track/${data.spotify.track_id}`}
       >
-        <p className="py-3 md:px-4 px-4 rounded-t-lg border-b-2 border-transparent focus:text-gray-600 focus:border-gray-300">
+        <p className="py-3 md:px-4 px-2 rounded-t-lg border-b-2 border-transparent focus:text-gray-600 focus:border-gray-300">
             Currently Listening To: <span className="underline">{data?.spotify?.song}</span> by {data?.spotify?.artist}<span>
               <SiSpotify className="h-4 w-4 md:h-5 md:w-5 flex-shrink-0 text-green-400" /></span>
         </p>
@@ -91,8 +91,8 @@ const SongBar = () => {
       <button onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
           {/* eventually add a thing to toggle light/dark mode*/}
           { theme === 'dark' || !theme
-            ? <SunIcon className="h-12 w-12 bg-blue-400 text-yellow-400 p-2 rounded-xl"/>
-            : <MoonIcon className="h-12 w-12 bg-blue-700 text-yellow-400 p-2 rounded-xl"/>
+            ? <SunIcon className="h-12 w-12 bg-blue-400 text-white p-2 rounded-xl"/>
+            : <MoonIcon className="h-12 w-12 bg-blue-700 text-white p-2 rounded-xl"/>
           }
       </button>
       {/* <button>
