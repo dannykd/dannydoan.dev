@@ -33,13 +33,13 @@ const Home: NextPage = () => {
          <h1 className="mt-14 md:mt-16 mb-3 md:mb-4">&lt;projects&gt;</h1>
          <div className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
           <Project 
-            title="aniwatch"
+            title="aniwatch 📺"
             description="social media web app that allows users to share and rate what anime they're currently watching.
             uses data from anilist's graphql api."
           ></Project>
 
           <Project 
-            title="skolr"
+            title="skolr 📚"
             description="web app that allows users to create and log study sessions following pomodoro 
             techniques."
           ></Project>
