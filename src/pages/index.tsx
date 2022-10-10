@@ -4,6 +4,7 @@ import Image from "next/image";
 import Project from "./components/Project";
 import Experience from "./components/Experience";
 import Script from 'next/script'
+import { SiGithub, SiLinkedin, SiGmail, SiTwitter } from 'react-icons/si'
 
 const Home: NextPage = () => {
   return (
@@ -23,10 +24,19 @@ const Home: NextPage = () => {
               i like thrillers, sushi, and the la rams.
             </p>
             
-            <div className='flex mt-6 space-x-4 md:space-x-8 underline'>
-              <a href="https://www.linkedin.com/in/danny-doan/">linkedin↗️</a>
-              <a href="https://github.com/dkdoan">github↗️</a>
-              <a href="mailto:dannykdoan@gmail.com">email↗️</a>            
+            <div className='flex text-xl mt-6 space-x-6 md:space-x-8 underline'>
+              <a href="https://www.linkedin.com/in/danny-doan/" className="hover:text-blue-600 dark:hover:text-blue-400">
+                <SiLinkedin></SiLinkedin>
+              </a>
+              <a href="https://github.com/dkdoan" className="hover:text-blue-600 dark:hover:text-blue-400">
+                <SiGithub></SiGithub>
+              </a>
+              <a href="mailto:dannykdoan@gmail.com" className="hover:text-blue-600 dark:hover:text-blue-400">
+                <SiGmail></SiGmail>
+              </a>
+              <a href="https://mobile.twitter.com/dannydoanut" className="hover:text-blue-600 dark:hover:text-blue-400">
+                <SiTwitter></SiTwitter>
+              </a>               
             </div>
          </div>
         
