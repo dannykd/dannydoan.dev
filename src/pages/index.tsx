@@ -24,7 +24,7 @@ const Home: NextPage = () => {
               i like thrillers, sushi, and the la rams.
             </p>
             
-            <div className='flex text-xl mt-6 space-x-6 md:space-x-8 underline'>
+            <div className='flex text-xl mt-6 space-x-6 md:space-x-8 underline md:text-2xl'>
               <a href="https://www.linkedin.com/in/danny-doan/" className="hover:text-blue-600 dark:hover:text-blue-400">
                 <SiLinkedin></SiLinkedin>
               </a>
