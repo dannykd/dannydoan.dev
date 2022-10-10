@@ -40,7 +40,7 @@ const Project = ({ title, description, gh_url, proj_url }: Props) => {
     >
       <button
         onClick={toggle}
-        className="z-10 flex select-none items-center text-lg p-3 px-4"
+        className="z-10 flex select-none items-center md:text-lg p-4 md:p-3 px-4"
       >
         <div className="flex flex-1 dark:text-white">
           <p>{title}</p>
