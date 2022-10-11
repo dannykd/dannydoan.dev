@@ -40,7 +40,7 @@ const Home: NextPage = () => {
             </div>
          </div>
         
-         <h1 className="mt-14 md:mt-16 mb-3 md:mb-4">&lt;projects&gt;</h1>
+         <h1 className="mt-14 md:mt-16 mb-3 md:mb-4 md:text-xl text-lg">&lt;projects&gt;</h1>
          <div className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
           <Project 
             title="📺 aniwatch"
@@ -64,7 +64,7 @@ const Home: NextPage = () => {
 
         </div>
 
-        <h1 className="mt-14 md:mt-16 mb-3 md:mb-4">&lt;experience&gt;</h1>
+        <h1 className="mt-14 md:mt-16 mb-3 md:mb-4 md:text-xl text-lg">&lt;experience&gt;</h1>
         <div className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
           <Experience
             role="software engineer intern"
