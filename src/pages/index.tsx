@@ -17,7 +17,7 @@ const Home: NextPage = () => {
 
       <main className="mx-auto max-w-4xl p-2 mt-8 md:mt-12 text-md md:text-lg min-h-full">
         <div>
-            <h1 className='text-3xl md:text-4xl'>hey, i&apos;m <span className='text-blue-600 dark:text-blue-400'>danny</span>.</h1>
+            <h1 className='text-3xl md:text-4xl'>hey, i&apos;m <span className='underline decoration-blue-600 dark:decoration-blue-400'>danny</span>.</h1>
             <p className='mt-6'>
               i&apos;m a california-based developer studying computer science @uci. i&apos;m a big fan of all things
               full stack whether it be writing RESTful apis in express.js or designing a responsive front end with <span className='line-through'>react.js</span> next.js.
@@ -55,7 +55,7 @@ const Home: NextPage = () => {
           ></Project>
 
           <Project 
-            title="💼 portfolio site"
+            title="🌐 dannydoan.dev"
             description="this website!"
             gh_url="https://github.com/dkdoan/dannydoan.dev"
             proj_url="https://www.dannydoan.dev/"
