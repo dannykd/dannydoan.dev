@@ -61,16 +61,16 @@ const Project = ({ title, description, gh_url, proj_url }: Props) => {
               <p className="flex-1 select-none text-neutral-700 dark:text-neutral-300">{description}</p>
 
               {/* links to proj and gh */}
-              <div className="flex justify-between">
+              <div className="flex justify-between text-sm space-x-2">
                 {gh_url && (
                   <a
                     target="_blank"
                     rel="noreferrer"
                     href={gh_url}
-                    className="flex items-center space-x-2 rounded-full bg-gray-700 p-2 pr-2 transition-transform hover:scale-95 sm:pr-4"
+                    className="flex items-center space-x-2 rounded-full bg-neutral-200 dark:bg-neutral-800 p-2 pr-2 transition-transform hover:scale-95 sm:pr-4"
                   >
                     <SiGithub className="h-5 w-5" />
-                    <p>Source Code</p>
+                    <p>code</p>
                   </a>
                 )}
                 {proj_url && (
@@ -78,10 +78,10 @@ const Project = ({ title, description, gh_url, proj_url }: Props) => {
                     target="_blank"
                     rel="noreferrer"
                     href={proj_url}
-                    className="flex items-center space-x-2 rounded-full bg-gray-700 p-2 pr-2 transition-transform hover:scale-95 sm:pr-4"
+                    className="flex items-center space-x-2 rounded-full bg-neutral-200 dark:bg-neutral-800 p-2 pr-2 transition-transform hover:scale-95 sm:pr-4"
                   >
                     <GlobeAltIcon className="h-5 w-5" />
-                    <p>View Project</p>
+                    <p>project</p>
                   </a>
                 )}
               </div>
