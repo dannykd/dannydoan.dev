@@ -28,10 +28,10 @@ const Home: NextPage = () => {
               <a href="https://www.linkedin.com/in/danny-doan/" className="hover:text-blue-600 dark:hover:text-blue-400">
                 <SiLinkedin></SiLinkedin>
               </a>
-              <a href="https://github.com/dkdoan" className="hover:text-blue-600 dark:hover:text-blue-400">
+              <a href="https://github.com/dannykd" className="hover:text-blue-600 dark:hover:text-blue-400">
                 <SiGithub></SiGithub>
               </a>
-              <a href="mailto:dannykdoan@gmail.com" className="hover:text-blue-600 dark:hover:text-blue-400">
+              <a href="mailto:hello@dannydoan.dev" className="hover:text-blue-600 dark:hover:text-blue-400">
                 <SiGmail></SiGmail>
               </a>
               <a href="https://mobile.twitter.com/dannydoanut" className="hover:text-blue-600 dark:hover:text-blue-400">
