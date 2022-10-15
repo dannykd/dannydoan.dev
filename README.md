@@ -1,7 +1,4 @@
 # My Personal Website
 
-##TECH STACK
-nextjs
-tailwindcss
-vercel
+built with nextjs, tailwindcss. deployed with vercel
 
