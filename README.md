@@ -2,8 +2,11 @@
 
 ``
 TECH STACK:
-next.js
-tailwindcss
-vercel
+
+  next.js
+   
+  tailwindcss
+  
+  vercel
 ``
 
