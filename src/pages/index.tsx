@@ -69,9 +69,8 @@ const Home: NextPage = () => {
           <Experience
             role="software engineer intern"
             img="https://pbs.twimg.com/profile_images/1473756532827246593/KRgw2UkV_400x400.jpg"
-            description="worked on the RDS platform team. created a dashboard for engine teams
-              (oracle, postgres, mysql, etc) to track and monitor 
-              engine updates as they propagate to customer instances"
+            description="worked on the RDS platform team. built a dashboard for
+            engine teams to track engine updates"
             timespan="june 2022 - sep 2022"
           ></Experience>
         </div>
