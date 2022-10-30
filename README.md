@@ -1,4 +1,4 @@
-# Portfolio site
+# My Personal Website
 
-Built with Nextjs and TailwindCSS -> Deployed with Vercel
+built with nextjs, tailwindcss. deployed with vercel
 
