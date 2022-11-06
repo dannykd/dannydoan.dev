@@ -29,7 +29,7 @@ const Project = ({ title, description, gh_url, proj_url }: Props) => {
     <motion.div
       animate={{ height: open ? "auto" : "56px" }}
       className="card relative flex flex-col overflow-hidden rounded-md border dark:border-white/20
-      bg-white dark:bg-[#0b0b0b] border-black/20"
+      bg-white dark:bg-[#0b0b0b] border-black/20 hover:shadow-md hover:shadow-blue-500 transition duration-200 ease-out md:ease-in"
       style={
         {
           "--cursor-x": coords.x + "px",

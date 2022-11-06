@@ -25,10 +25,10 @@ const Home: NextPage = () => {
             </p>
             
             <div className='flex mt-6 space-x-6 md:space-x-10 underline text-2xl md:text-3xl'>
-              <a href="https://www.linkedin.com/in/danny-doan/" className="hover:text-blue-600 dark:hover:text-blue-400">
+              <a href="https://www.linkedin.com/in/danny-doan/" target="_blank" className="hover:text-blue-600 dark:hover:text-blue-400">
                 <SiLinkedin></SiLinkedin>
               </a>
-              <a href="https://github.com/dannykd" className="hover:text-blue-600 dark:hover:text-blue-400">
+              <a href="https://github.com/dannykd" target="_blank" className="hover:text-blue-600 dark:hover:text-blue-400">
                 <SiGithub></SiGithub>
               </a>
               <a href="mailto:hello@dannydoan.dev" className="hover:text-blue-600 dark:hover:text-blue-400">
