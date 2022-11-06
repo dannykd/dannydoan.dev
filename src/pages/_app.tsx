@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <ThemeProvider attribute="class">
-      <div className='bg-neutral-100 dark:bg-[#000000] dark:text-white space-y-8 py-6 px-5 lg:px-0 min-h-screen'>
+      <div className='bg-neutral-100 dark:bg-[#060606] dark:text-white space-y-8 py-6 px-5 lg:px-0 min-h-screen'>
         <SongBar></SongBar>
           <AnimatePresence>
             <motion.div
