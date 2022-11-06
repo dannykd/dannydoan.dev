@@ -28,8 +28,8 @@ const Project = ({ title, description, gh_url, proj_url }: Props) => {
   return (
     <motion.div
       animate={{ height: open ? "auto" : "56px" }}
-      className="card relative flex flex-col overflow-hidden rounded-md border dark:border-white/20
-      bg-white dark:bg-neutral-900 border-black/20"
+      className="card relative flex flex-col overflow-hidden rounded-md border dark:border-white/30
+      bg-white dark:bg-[#0a0a0a] border-black/20"
       style={
         {
           "--cursor-x": coords.x + "px",
@@ -55,7 +55,7 @@ const Project = ({ title, description, gh_url, proj_url }: Props) => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="z-10 mx-4 flex h-full border-t dark:border-white/20 border-black/20"
+            className="z-10 mx-4 flex h-full border-t dark:border-white/30 border-black/20"
           >
             <div className="flex flex-col space-y-4 px-2 py-4">
               <p className="flex-1 select-none text-neutral-700 dark:text-neutral-300">{description}</p>
