@@ -21,7 +21,7 @@ function MyApp({ Component, pageProps }: AppProps) {
             </motion.div>
           </AnimatePresence>
       </div>
-      <footer className="flex justify-center dark:text-white text-black bg-neutral-100 dark:bg-[#000000]
+      <footer className="flex justify-center dark:text-white text-black bg-neutral-100 dark:bg-[#060606]
        text-xs md:text-sm p-4">{"/* built with <3 by me (danny) */"} </footer>
     </ThemeProvider>
   )
