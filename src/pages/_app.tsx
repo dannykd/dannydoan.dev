@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider attribute="class">
       <div className='bg-neutral-100 dark:bg-[#060606] dark:text-white space-y-8 py-6 px-5 lg:px-0 min-h-screen
-      ease-in duration-100'>
+      transition-colors'>
         <SongBar></SongBar>
           <AnimatePresence>
             <motion.div
@@ -23,7 +23,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           </AnimatePresence>
       </div>
       <footer className="flex justify-center dark:text-white text-black bg-neutral-100 dark:bg-[#060606]
-       text-xs md:text-sm p-4 ease-in duration-100">{"/* built with <3 by me (danny) */"} </footer>
+       text-xs md:text-sm p-4 transition-colors">{"/* built with <3 by me (danny) */"} </footer>
     </ThemeProvider>
   )
 }
