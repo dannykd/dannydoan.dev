@@ -29,7 +29,7 @@ const SongBar = () => {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5 }}
         className="sticky top-0 z-50 mx-auto max-w-4xl border-b border-neutral-300 bg-neutral-100 dark:bg-[#060606]
-        transition-colors"
+        transition-[background-color]"
       >
         <div className="flex justify-between text-left text-xs font-medium dark:text-neutral-300 md:text-sm">
           <p className="rounded-t-lg py-3 px-2 focus:border-gray-300 focus:text-gray-600">
@@ -74,7 +74,7 @@ const SongBar = () => {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
       className="sticky top-0 z-50 mx-auto max-w-4xl border-b border-neutral-300 bg-neutral-100 dark:bg-[#060606]
-      transition-colors"
+      transition-[background-color]"
     >
       <div className="flex justify-between text-left text-xs dark:text-neutral-300 md:text-sm">
         <a
