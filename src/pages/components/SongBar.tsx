@@ -2,25 +2,25 @@ import Link from "next/link";
 import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu } from "@headlessui/react";
-import { Bars3Icon, XMarkIcon, SunIcon, MoonIcon } from "@heroicons/react/24/solid";
-import { withRouter } from 'next/router'
+import {
+  Bars3Icon,
+  XMarkIcon,
+  SunIcon,
+  MoonIcon,
+} from "@heroicons/react/24/solid";
+import { withRouter } from "next/router";
 import { SiSpotify } from "react-icons/si";
 import { useLanyardWs } from "use-lanyard";
-import {useTheme } from 'next-themes'
-import { useEffect } from 'react'
-
-
+import { useTheme } from "next-themes";
+import { useEffect } from "react";
 
 const SongBar = () => {
-  
-  const {theme, setTheme} = useTheme()
-  const data = useLanyardWs('509537385231417385')
+  const { theme, setTheme } = useTheme();
+  const data = useLanyardWs("509537385231417385");
 
   useEffect(() => {
-    setTheme('dark')
-  }, [])
-
-
+    setTheme("dark");
+  }, []);
 
   if (!data?.spotify) {
     return (
@@ -28,24 +28,25 @@ const SongBar = () => {
         initial={{ y: -10, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5 }}
-        className="sticky top-0 z-50 bg-inherit border-b border-neutral-300 max-w-4xl mx-auto"
+        className="sticky top-0 z-50 mx-auto max-w-4xl border-b border-neutral-300 bg-inherit"
       >
-
-      <div className="text-xs md:text-sm flex justify-between font-medium text-left 
-       border-neutral-300 dark:text-neutral-300">   
-          <p className="py-3 px-2 rounded-t-lg focus:text-gray-600 focus:border-gray-300">
-              Not Playing Anything <span><SiSpotify className="h-4 w-4 md:h-5 md:w-5 flex-shrink-0" /></span>
+        <div className="flex justify-between text-left text-xs font-medium dark:text-neutral-300 md:text-sm">
+          <p className="rounded-t-lg py-3 px-2 focus:border-gray-300 focus:text-gray-600">
+            Not Playing Anything{" "}
+            <span>
+              <SiSpotify className="h-4 w-4 flex-shrink-0 md:h-5 md:w-5" />
+            </span>
           </p>
 
-     
-          <button onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
-                {/* eventually add a thing to toggle light/dark mode*/}
-                { theme === 'dark' || !theme
-                  ? <SunIcon className="h-12 w-12 bg-[#0F0E0E] border border-white text-white p-2 rounded-xl"/>
-                  : <MoonIcon className="h-12 w-12 bg-neutral-100 border border-black text-black p-2 rounded-xl"/>
-                }
+          <button onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
+            {/* eventually add a thing to toggle light/dark mode*/}
+            {theme === "dark" || !theme ? (
+              <SunIcon className="h-12 w-12 rounded-xl border border-white bg-[#0F0E0E] p-2 text-white" />
+            ) : (
+              <MoonIcon className="h-12 w-12 rounded-xl border border-black bg-neutral-100 p-2 text-black" />
+            )}
           </button>
-            {/*<button>
+          {/*<button>
               <Menu as="div" className="relative inline-block text-left">
                   <Menu.Button className="inline-flex rounded-md py-2 text-sm font-medium text-white hover:bg-opacity-30
                   focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
@@ -61,42 +62,43 @@ const SongBar = () => {
                   </Menu.Items>
               </Menu>
               </button>*/}
-     
-        
-      </div>
+        </div>
       </motion.div>
-    )
+    );
   }
 
   return (
     <motion.div
-    initial={{ y: -10, opacity: 0 }}
-    animate={{ y: 0, opacity: 1 }}
-    transition={{ duration: 0.5 }}
-    className="sticky top-0 z-50 bg-inherit border-b border-neutral-300 max-w-4xl mx-auto"
+      initial={{ y: -10, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.5 }}
+      className="sticky top-0 z-50 mx-auto max-w-4xl border-b border-neutral-300 bg-inherit"
     >
+      <div className="flex justify-between text-left text-xs dark:text-neutral-300 md:text-sm">
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href={`https://open.spotify.com/track/${data.spotify.track_id}`}
+        >
+          <p className="rounded-t-lg py-3 px-2 focus:border-gray-300 focus:text-gray-600">
+            Currently Listening To:{" "}
+            <span className="underline">{data?.spotify?.song}</span> by{" "}
+            {data?.spotify?.artist}
+            <span>
+              <SiSpotify className="h-4 w-4 flex-shrink-0 text-green-400 md:h-5 md:w-5" />
+            </span>
+          </p>
+        </a>
 
-    <div className="text-xs md:text-sm flex justify-between text-left
-       dark:text-neutral-300">
-      <a target="_blank"
-        rel="noreferrer"
-        href={`https://open.spotify.com/track/${data.spotify.track_id}`}
-      >
-        <p className="py-3 px-2 rounded-t-lg focus:text-gray-600 focus:border-gray-300">
-            Currently Listening To: <span className="underline">{data?.spotify?.song}</span> by {data?.spotify?.artist}<span>
-              <SiSpotify className="h-4 w-4 md:h-5 md:w-5 flex-shrink-0 text-green-400" /></span>
-        </p>
-      </a>
-     
-      <button onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
+        <button onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
           {/* eventually add a thing to toggle light/dark mode*/}
-          { theme === 'dark' || !theme
-            ? <SunIcon className="h-12 w-12 bg-[#0F0E0E] border border-white text-white p-2 rounded-xl"/>
-            : <MoonIcon className="h-12 w-12 bg-neutral-100 border border-black text-black p-2 rounded-xl"/>
-          }
-      </button>    
-    </div>
-
+          {theme === "dark" || !theme ? (
+            <SunIcon className="h-12 w-12 rounded-xl border border-white bg-[#0F0E0E] p-2 text-white" />
+          ) : (
+            <MoonIcon className="h-12 w-12 rounded-xl border border-black bg-neutral-100 p-2 text-black" />
+          )}
+        </button>
+      </div>
     </motion.div>
   );
 };

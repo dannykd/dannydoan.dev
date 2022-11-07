@@ -28,8 +28,8 @@ const Project = ({ title, description, gh_url, proj_url }: Props) => {
   return (
     <motion.div
       animate={{ height: open ? "auto" : "56px" }}
-      className="card relative flex flex-col overflow-hidden rounded-md border dark:border-white/20
-      bg-white dark:bg-[#0b0b0b] border-black/20"
+      className="card relative flex flex-col overflow-hidden rounded-md border border-black/20
+      bg-white dark:border-white/20 dark:bg-[#0b0b0b]"
       style={
         {
           "--cursor-x": coords.x + "px",
@@ -40,7 +40,7 @@ const Project = ({ title, description, gh_url, proj_url }: Props) => {
     >
       <button
         onClick={toggle}
-        className="z-10 flex select-none items-center md:text-lg p-4 md:p-3 md:px-4 px-4"
+        className="z-10 flex select-none items-center p-4 px-4 md:p-3 md:px-4 md:text-lg"
       >
         <div className="flex flex-1 dark:text-white">
           <p>{title}</p>
@@ -55,19 +55,21 @@ const Project = ({ title, description, gh_url, proj_url }: Props) => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="z-10 mx-4 flex h-full border-t dark:border-white/20 border-black/20"
+            className="z-10 mx-4 flex h-full border-t border-black/20 dark:border-white/20"
           >
             <div className="flex flex-col space-y-4 px-2 py-4">
-              <p className="flex-1 select-none text-neutral-700 dark:text-neutral-300">{description}</p>
+              <p className="flex-1 select-none text-neutral-700 dark:text-neutral-300">
+                {description}
+              </p>
 
               {/* links to proj and gh */}
-              <div className="flex justify-between text-sm space-x-2">
+              <div className="flex justify-between space-x-2 text-sm">
                 {gh_url && (
                   <a
                     target="_blank"
                     rel="noreferrer"
                     href={gh_url}
-                    className="flex items-center space-x-2 rounded-full bg-neutral-200 dark:bg-neutral-900 p-2 pr-2 transition-transform hover:scale-95 sm:pr-4"
+                    className="flex items-center space-x-2 rounded-full bg-neutral-200 p-2 pr-2 transition-transform hover:scale-95 dark:bg-neutral-900 sm:pr-4"
                   >
                     <SiGithub className="h-5 w-5" />
                     <p>code</p>
@@ -78,7 +80,7 @@ const Project = ({ title, description, gh_url, proj_url }: Props) => {
                     target="_blank"
                     rel="noreferrer"
                     href={proj_url}
-                    className="flex items-center space-x-2 rounded-full bg-neutral-200 dark:bg-neutral-900 p-2 pr-2 transition-transform hover:scale-95 sm:pr-4"
+                    className="flex items-center space-x-2 rounded-full bg-neutral-200 p-2 pr-2 transition-transform hover:scale-95 dark:bg-neutral-900 sm:pr-4"
                   >
                     <GlobeAltIcon className="h-5 w-5" />
                     <p>project</p>
