@@ -67,7 +67,7 @@ const Home: NextPage = () => {
         <h1 className="mt-14 mb-3 text-lg md:mt-16 md:mb-4 md:text-xl">
           &lt;projects&gt;
         </h1>
-        <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
+        <div className="grid grid-cols-1 gap-2 md:gap-4 sm:grid-cols-2">
           <Project
             title="📺 aniwatch"
             description="social media web app that allows users to share and rate what anime they're currently watching.
