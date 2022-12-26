@@ -8,19 +8,6 @@ import { SiGithub, SiLinkedin, SiGmail, SiTwitter } from "react-icons/si";
 
 const Home: NextPage = () => {
   return (
-    <div className="">
-      <Head>
-        <title>Danny Doan</title>
-        <link
-          rel="icon"
-          href="https://avatars.githubusercontent.com/u/92613890?s=400&u=e0047c360a4ec70d3e487df52452decafbce4351&v=4"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
-          rel="stylesheet"
-        ></link>
-      </Head>
-
       <main className="text-md mx-auto mt-8 min-h-full max-w-4xl p-2 md:mt-12 md:text-lg">
         <div>
           <h1 className="text-3xl md:text-4xl">
@@ -69,15 +56,9 @@ const Home: NextPage = () => {
         </h1>
         <div className="grid grid-cols-1 gap-2 sm:gap-3 sm:grid-cols-2">
           <Project
-            title="📺 aniwatch"
+            title="🎵 karaokey.app"
             description="social media web app that allows users to share and rate what anime they're currently watching.
             uses data from anilist's graphql api."
-          ></Project>
-
-          <Project
-            title="📚 skolr"
-            description="web app that allows users to create and log study sessions following pomodoro 
-            techniques."
           ></Project>
 
           <Project
@@ -87,21 +68,7 @@ const Home: NextPage = () => {
             proj_url="https://www.dannydoan.dev/"
           ></Project>
         </div>
-
-        <h1 className="mt-14 mb-3 text-lg md:mt-16 md:mb-4 md:text-xl">
-          &lt;experience&gt;
-        </h1>
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-          <Experience
-            role="software engineer intern"
-            img="https://pbs.twimg.com/profile_images/1473756532827246593/KRgw2UkV_400x400.jpg"
-            description="worked on the RDS platform team. built a dashboard for
-            engine teams to track engine updates"
-            timespan="june 2022 - sep 2022"
-          ></Experience>
-        </div>
       </main>
-    </div>
   );
 };
 

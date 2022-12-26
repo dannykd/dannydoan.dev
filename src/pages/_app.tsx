@@ -1,5 +1,6 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
+import Head from "next/head";
 import { AnimatePresence, motion } from "framer-motion";
 import SongBar from "./components/SongBar";
 import { ThemeProvider } from "next-themes";
@@ -11,6 +12,17 @@ function MyApp({ Component, pageProps }: AppProps) {
         className="min-h-screen space-y-8 bg-neutral-100 py-6 px-5 transition-colors dark:bg-[#060606] dark:text-white
       lg:px-0"
       >
+      <Head>
+          <title>Danny Doan</title>
+          <link
+            rel="icon"
+            href="https://avatars.githubusercontent.com/u/92613890?s=400&u=e0047c360a4ec70d3e487df52452decafbce4351&v=4"
+          />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+            rel="stylesheet"
+          ></link>
+      </Head>
         <SongBar></SongBar>
         <AnimatePresence>
           <motion.div
