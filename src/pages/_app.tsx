@@ -2,6 +2,7 @@ import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import Head from "next/head";
 import { AnimatePresence, motion } from "framer-motion";
+import Footer from  "./components/Footer";
 import SongBar from "./components/SongBar";
 import { ThemeProvider } from "next-themes";
 
@@ -34,12 +35,7 @@ function MyApp({ Component, pageProps }: AppProps) {
             <Component {...pageProps} />
           </motion.div>
         </AnimatePresence>
-        <footer
-          className="flex justify-center bg-neutral-100 p-4 text-xs text-black
-        transition-colors dark:bg-[#060606] dark:text-white md:text-sm bottom-0 left-0 right-0 absolute"
-        >
-          {"built with ♥ by danny"}{" "}
-        </footer>
+        <Footer></Footer>
       </div>
     </ThemeProvider>
   );
