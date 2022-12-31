@@ -56,9 +56,9 @@ const Home: NextPage = () => {
         </h1>
         <div className="grid grid-cols-1 gap-2 sm:gap-3 sm:grid-cols-2">
           <Project
-            title="🎵 karaokey.app"
-            description="social media web app that allows users to share and rate what anime they're currently watching.
-            uses data from anilist's graphql api."
+            title="🎵 karaoke typing game"
+            description="karaoke-like typing game with in-browser music streaming via Spotify's SDK.
+            (in development)"
           ></Project>
 
           <Project
