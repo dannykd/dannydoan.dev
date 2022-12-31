@@ -58,7 +58,7 @@ const Project = ({ title, description, gh_url, proj_url }: Props) => {
             className="z-10 mx-4 flex h-full border-t border-black/20 dark:border-white/20"
           >
             <div className="flex flex-col space-y-4 px-2 py-4">
-              <p className="flex-1 select-none text-neutral-700 dark:text-neutral-300">
+              <p className="flex-1 select-none text-neutral-700 dark:text-neutral-300 text-base">
                 {description}
               </p>
 
