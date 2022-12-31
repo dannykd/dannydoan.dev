@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider attribute="class">
       <div
-        className="min-h-screen space-y-8 bg-neutral-100 py-6 px-5 transition-colors dark:bg-[#060606] dark:text-white
+        className="relative min-h-screen space-y-8 bg-neutral-100 py-6 px-5 transition-colors dark:bg-[#060606] dark:text-white
       lg:px-0"
       >
       <Head>
@@ -34,13 +34,13 @@ function MyApp({ Component, pageProps }: AppProps) {
             <Component {...pageProps} />
           </motion.div>
         </AnimatePresence>
+        <footer
+          className="flex justify-center bg-neutral-100 p-4 text-xs text-black
+        transition-colors dark:bg-[#060606] dark:text-white md:text-sm bottom-0 left-0 right-0 absolute"
+        >
+          {"built with ♥ by danny"}{" "}
+        </footer>
       </div>
-      <footer
-        className="flex justify-center bg-neutral-100 p-4 text-xs text-black
-       transition-colors dark:bg-[#060606] dark:text-white md:text-sm"
-      >
-        {"/* built with <3 by me (danny) */"}{" "}
-      </footer>
     </ThemeProvider>
   );
 }
