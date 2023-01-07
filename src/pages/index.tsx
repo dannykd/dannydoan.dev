@@ -50,7 +50,8 @@ const Home: NextPage = () => {
             </a>
           </div>
         </div>
-
+        {
+          /*
         <h1 className="mt-14 mb-3 text-lg md:mt-16 md:mb-4 md:text-xl">
           &lt;projects&gt;
         </h1>
@@ -62,6 +63,8 @@ const Home: NextPage = () => {
             proj_url="https://www.dannydoan.dev/"
           ></Project>
         </div>
+          */
+        }
       </main>
   );
 };
