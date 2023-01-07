@@ -56,12 +56,6 @@ const Home: NextPage = () => {
         </h1>
         <div className="grid grid-cols-1 gap-2 sm:gap-3 sm:grid-cols-2">
           <Project
-            title="🎵 karaoke typing game"
-            description="karaoke-like typing game with in-browser music streaming via Spotify's SDK.
-            (in development)"
-          ></Project>
-
-          <Project
             title="🌐 dannydoan.dev"
             description="this website!"
             gh_url="https://github.com/dkdoan/dannydoan.dev"
