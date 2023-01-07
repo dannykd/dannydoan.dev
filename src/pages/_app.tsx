@@ -21,7 +21,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           ></link>
       </Head>
       <div
-        className="relative min-h-screen space-y-8 bg-neutral-100 py-6 px-5 transition-colors dark:bg-[#060606] dark:text-white
+        className="relative min-h-screen space-y-8 bg-white py-6 px-5 transition-colors dark:bg-[#060606] dark:text-white
       lg:px-0 font-sans"
       >
         <SongBar></SongBar>

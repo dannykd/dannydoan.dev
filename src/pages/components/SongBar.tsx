@@ -28,7 +28,7 @@ const SongBar = () => {
         initial={{ y: -10, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5 }}
-        className="sticky top-0 z-50 mx-auto max-w-4xl border-b border-neutral-300 bg-neutral-100 dark:bg-[#060606]
+        className="sticky top-0 z-50 mx-auto max-w-4xl border-b border-neutral-300 bg-white dark:bg-[#060606]
         transition-[background-color]"
       >
         <div className="flex justify-between text-left text-xs font-medium dark:text-neutral-300 md:text-sm">
@@ -44,7 +44,7 @@ const SongBar = () => {
             {theme === "dark" || !theme ? (
               <SunIcon className="h-12 w-12 rounded-xl border border-white bg-[#0F0E0E] p-2 text-white" />
             ) : (
-              <MoonIcon className="h-12 w-12 rounded-xl border border-black bg-neutral-100 p-2 text-black" />
+              <MoonIcon className="h-12 w-12 rounded-xl border border-black bg-white p-2 text-black" />
             )}
           </button>
           {/*<button>
@@ -73,7 +73,7 @@ const SongBar = () => {
       initial={{ y: -10, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="sticky top-0 z-50 mx-auto max-w-4xl border-b border-neutral-300 bg-neutral-100 dark:bg-[#060606]
+      className="sticky top-0 z-50 mx-auto max-w-4xl border-b border-neutral-300 bg-white dark:bg-[#060606]
       transition-[background-color]"
     >
       <div className="flex justify-between text-left text-xs dark:text-neutral-300 md:text-sm">
@@ -97,7 +97,7 @@ const SongBar = () => {
           {theme === "dark" || !theme ? (
             <SunIcon className="h-12 w-12 rounded-xl border border-white bg-[#0F0E0E] p-2 text-white" />
           ) : (
-            <MoonIcon className="h-12 w-12 rounded-xl border border-black bg-neutral-100 p-2 text-black" />
+            <MoonIcon className="h-12 w-12 rounded-xl border border-black bg-white p-2 text-black" />
           )}
         </button>
       </div>
