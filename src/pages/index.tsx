@@ -8,7 +8,7 @@ import { SiGithub, SiLinkedin, SiGmail, SiTwitter } from "react-icons/si";
 
 const Home: NextPage = () => {
   return (
-      <main className="text-md mx-auto mt-8 min-h-full max-w-4xl p-2 md:mt-12 mb-10 md:text-lg font-sans">
+      <main className="text-md mx-auto mt-8 max-w-4xl p-2 md:mt-12 mb-20 md:text-lg font-sans">
         <div>
           <h1 className="text-3xl md:text-4xl">
             hey, i&apos;m <span className="">danny</span>.
