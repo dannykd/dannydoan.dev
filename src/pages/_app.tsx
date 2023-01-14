@@ -35,7 +35,7 @@ function MyApp({ Component, pageProps }: AppProps) {
             <Component {...pageProps} />
           </motion.div>
         </AnimatePresence>
-        <Footer></Footer>
+        {/* <Footer></Footer> */}
       </div>
     </ThemeProvider>
   );
