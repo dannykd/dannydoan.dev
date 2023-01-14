@@ -13,7 +13,7 @@ const Footer: FC<FooterProps> = () => {
      dark:text-white md:text-sm bottom-0 left-0 right-0 absolute text-neutral-500 dark:text-neutral-500"
     >
 
-        <p>{"built with ♥ by danny"}</p>
+        <p>{"fear is the mind-killer"}</p>
         <a href="https://github.com/dannykd/dannydoan.dev">source↗</a>
     </motion.div>
 
