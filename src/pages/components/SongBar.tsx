@@ -81,9 +81,10 @@ const SongBar = () => {
           target="_blank"
           rel="noreferrer"
           href={`https://open.spotify.com/track/${data.spotify.track_id}`}
+          className="overflow-x-clip"
         >
-          <p className="rounded-t-lg py-3 px-2 focus:border-gray-300 focus:text-gray-600">
-            Currently Listening To:{" "}
+          <p className="rounded-t-lg py-3 px-2 focus:border-gray-300 focus:text-gray-600 truncate">
+            Listening To:{" "}
             <span className="underline">{data?.spotify?.song}</span> by{" "}
             {data?.spotify?.artist}
             <span>
