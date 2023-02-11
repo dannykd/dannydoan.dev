@@ -25,37 +25,37 @@ const Home: NextPage = () => {
             <a
               href="https://www.linkedin.com/in/danny-doan/"
               target="_blank"
-              className="hover:text-blue-600 dark:hover:text-blue-400"
+              className="hover:scale-110 transition ease-in-out duration-150"
             >
               <SiLinkedin></SiLinkedin>
             </a>
             <a
               href="https://github.com/dannykd"
               target="_blank"
-              className="hover:text-blue-600 dark:hover:text-blue-400"
+              className="hover:scale-110 transition ease-in-out duration-150"
             >
               <SiGithub></SiGithub>
             </a>
             <a
               href="mailto:hello@dannydoan.dev"
-              className="hover:text-blue-600 dark:hover:text-blue-400"
+              className="hover:scale-110 transition ease-in-out duration-150"
             >
               <SiGmail></SiGmail>
             </a>
             <a
               href="https://mobile.twitter.com/dannydoanut"
-              className="hover:text-blue-600 dark:hover:text-blue-400"
+              className="hover:scale-110 transition ease-in-out duration-150"
             >
               <SiTwitter></SiTwitter>
             </a>
           </div>
         </div>
-        {
-          /*
+       
+      {/*
         <h1 className="mt-14 mb-3 text-lg md:mt-16 md:mb-4 md:text-xl">
           &lt;projects&gt;
         </h1>
-        <div className="grid grid-cols-1 gap-2 sm:gap-3 sm:grid-cols-2">
+        <div className="grid grid-cols-1 gap-2 mb-12 sm:gap-3 sm:grid-cols-2">
           <Project
             title="🌐 dannydoan.dev"
             description="this website!"
@@ -63,8 +63,8 @@ const Home: NextPage = () => {
             proj_url="https://www.dannydoan.dev/"
           ></Project>
         </div>
-          */
-        }
+      */}
+        
       </main>
   );
 };
