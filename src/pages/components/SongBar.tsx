@@ -74,7 +74,7 @@ const SongBar = () => {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
       className="top-0 z-50 mx-auto max-w-4xl border-b border-neutral-300 bg-white dark:bg-[#060606]
-      transition-[background-color]"
+      transition-[background-color] dark:border-neutral-600"
     >
       <div className="flex justify-between text-left text-xs dark:text-neutral-300 md:text-sm">
         <a
