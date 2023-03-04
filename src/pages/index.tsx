@@ -1,9 +1,5 @@
 import type { NextPage } from "next";
-import Head from "next/head";
-import Image from "next/image";
 import Project from "./components/Project";
-import Experience from "./components/Experience";
-import Script from "next/script";
 import { SiGithub, SiLinkedin, SiGmail, SiTwitter } from "react-icons/si";
 
 const Home: NextPage = () => {
