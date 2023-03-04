@@ -8,10 +8,10 @@ import { SiGithub, SiLinkedin, SiGmail, SiTwitter } from "react-icons/si";
 
 const Home: NextPage = () => {
   return (
-      <main className="text-md mx-auto mt-8 max-w-4xl p-2 md:mt-12 md:text-lg font-sans">
+      <main className="text-md mx-auto mt-8 max-w-4xl p-2 md:mt-12 md:text-lg">
         <div>
           <h1 className="text-3xl md:text-4xl">
-            hey, i&apos;m <span className="">danny</span>
+            hey, i&apos;m <span className="">danny 💫</span>
           </h1>
           <p className="mt-4 text-neutral-700 dark:text-neutral-300">
             i&apos;m a california-based developer studying computer science
@@ -58,7 +58,7 @@ const Home: NextPage = () => {
         <div className="grid grid-cols-1 gap-2 mb-12 sm:gap-3 sm:grid-cols-2">
           <Project
             title="🍻 drunkies"
-            description="a web-based drinking card game with niche decks"
+            description="a web-based drinking card game with niche decks for coders, weebs, and more"
             proj_url="https://www.drunkies.co/"
           ></Project>
           <Project

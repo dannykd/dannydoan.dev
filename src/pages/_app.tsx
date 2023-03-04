@@ -5,7 +5,13 @@ import { AnimatePresence, motion } from "framer-motion";
 import Footer from  "./components/Footer";
 import SongBar from "./components/SongBar";
 import { ThemeProvider } from "next-themes";
+import { Roboto_Mono } from 'next/font/google'
 
+
+const robotoMono = Roboto_Mono({
+  weight: '400',
+  subsets: ['latin']
+})
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider attribute="class">
@@ -21,8 +27,8 @@ function MyApp({ Component, pageProps }: AppProps) {
           ></link>
       </Head>
       <div
-        className="relative min-h-screen overflow-y-clip space-y-8 bg-white py-6 px-5 transition-colors dark:bg-[#060606] dark:text-white
-      lg:px-0 font-sans"
+        className={`relative min-h-screen overflow-y-clip space-y-8 bg-white py-6 px-4 transition-colors dark:bg-[#060606] dark:text-white
+        lg:px-0 ${robotoMono.className}`}
       >
         <SongBar></SongBar>
         <AnimatePresence>

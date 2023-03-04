@@ -8,6 +8,7 @@
   "dependencies": {
     "@headlessui/react": "^1.7.2",
     "@heroicons/react": "^2.0.11",
+    "@next/font": "^13.2.3",
     "framer-motion": "^7.3.6",
     "heroicons": "^2.0.11",
     "next": "latest",

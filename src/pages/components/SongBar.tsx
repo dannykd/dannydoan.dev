@@ -42,9 +42,9 @@ const SongBar = () => {
           <button onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
             {/* eventually add a thing to toggle light/dark mode*/}
             {theme === "dark" || !theme ? (
-              <SunIcon className="h-12 w-12 rounded-xl border border-white bg-[#0F0E0E] p-2 text-white" />
+              <SunIcon className="h-12 w-12 rounded-xl border border-neutral-600 bg-[#0F0E0E] p-2 text-white" />
             ) : (
-              <MoonIcon className="h-12 w-12 rounded-xl border border-black bg-white p-2 text-black" />
+              <MoonIcon className="h-12 w-12 rounded-xl border border-neutral-400 bg-white p-2 text-black" />
             )}
           </button>
           {/*<button>
@@ -96,9 +96,9 @@ const SongBar = () => {
         <button onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
           {/* eventually add a thing to toggle light/dark mode*/}
           {theme === "dark" || !theme ? (
-            <SunIcon className="h-12 w-12 rounded-xl border border-white bg-[#0F0E0E] p-2 text-white" />
+            <SunIcon className="h-12 w-12 rounded-xl border border-neutral-600 bg-[#0F0E0E] p-2 text-white" />
           ) : (
-            <MoonIcon className="h-12 w-12 rounded-xl border border-black bg-white p-2 text-black" />
+            <MoonIcon className="h-12 w-12 rounded-xl border border-neutral-400 bg-white p-2 text-black" />
           )}
         </button>
       </div>
