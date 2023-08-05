@@ -10,11 +10,10 @@ const Home: NextPage = () => {
             hey, i&apos;m <span className="">danny</span>
           </h1>
           <p className="mt-4 text-neutral-700 dark:text-neutral-300">
-            i&apos;m a california-based developer studying computer science
-            @uci. i&apos;m a big fan of all things full stack whether it be
-            writing RESTful apis in express.js or designing a responsive front
-            end with <span className="line-through">react.js</span> next.js. i
-            like thrillers, sushi, and the la rams.
+            i&apos;m a california-based developer with a BS in computer science
+            from uci. i&apos;m a big fan of all things full stack whether it be
+            writing APIs in python or designing a responsive front
+            end with react.js. i like movies, sushi, and the la rams.
           </p>
 
           <div className="mt-6 flex space-x-6 text-2xl underline md:space-x-10 md:text-3xl">
@@ -53,6 +52,12 @@ const Home: NextPage = () => {
         </h1>
         <div className="grid grid-cols-1 gap-2 mb-12 sm:gap-3 sm:grid-cols-2">
           <Project
+            title="🔎 zotsearch"
+            description="uci course discovery platform allowing students to search for classes using natural language"
+            gh_url="https://github.com/dannykd/zotsearch"
+            proj_url="https://www.zotsearch.com/"
+          ></Project>
+          <Project
             title="🍻 drunkies"
             description="a web-based drinking card game with niche decks for coders, weebs, and more"
             proj_url="https://www.drunkies.co/"
@@ -60,7 +65,7 @@ const Home: NextPage = () => {
           <Project
             title="🌐 dannydoan.dev"
             description="this website!"
-            gh_url="https://github.com/dkdoan/dannydoan.dev"
+            gh_url="https://github.com/dannykd/dannydoan.dev"
             proj_url="https://www.dannydoan.dev/"
           ></Project>
 

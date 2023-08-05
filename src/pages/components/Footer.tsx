@@ -12,8 +12,7 @@ const Footer: FC<FooterProps> = () => {
     className="flex max-w-4xl mx-auto justify-between bg-white p-4 text-xs text-black transition-colors dark:bg-[#060606]
      dark:text-white md:text-sm bottom-0 left-0 right-0 absolute text-neutral-500 dark:text-neutral-500"
     >
-
-        <p>{"fear is the mind-k†ller"}</p>
+        <p>{"made with <3 by me"}</p>
         <a href="https://github.com/dannykd/dannydoan.dev">source↗</a>
     </motion.div>
 

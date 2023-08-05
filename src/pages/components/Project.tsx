@@ -63,7 +63,7 @@ const Project = ({ title, description, gh_url, proj_url }: Props) => {
               </p>
 
               {/* links to proj and gh */}
-              <div className="flex justify-between space-x-2 text-sm">
+              <div className="flex space-x-2 text-sm">
                 {gh_url && (
                   <a
                     target="_blank"
