@@ -27,7 +27,7 @@ const Project = ({ title, description, gh_url, proj_url }: Props) => {
 
   return (
     <motion.div
-      animate={{ height: open ? "auto" : "56px" }}
+      animate={{ height: open ? "auto" : "52px" }}
       className="card relative flex flex-col overflow-hidden rounded-md border border-black/20
       bg-white dark:border-white/20 dark:bg-[#0b0b0b]"
       style={
@@ -40,7 +40,7 @@ const Project = ({ title, description, gh_url, proj_url }: Props) => {
     >
       <button
         onClick={toggle}
-        className="z-10 flex select-none items-center p-4 px-4 md:px-4 md:text-base"
+        className="z-10 flex select-none items-center p-3 px-4 md:text-base"
       >
         <div className="flex flex-1 dark:text-white">
           <p>{title}</p>
