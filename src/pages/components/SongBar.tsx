@@ -35,7 +35,7 @@ const SongBar = () => {
           <p className="rounded-t-lg py-3 px-2 focus:border-gray-300 focus:text-gray-600">
             Not Playing Anything{" "}
             <span>
-              <SiSpotify className="h-4 w-4 flex-shrink-0 md:h-5 md:w-5" />
+              <SiSpotify className="h-4 w-4 flex-shrink-0" />
             </span>
           </p>
 
@@ -88,7 +88,7 @@ const SongBar = () => {
             <span className="underline">{data?.spotify?.song}</span> by{" "}
             {data?.spotify?.artist}
             <span>
-              <SiSpotify className="h-4 w-4 flex-shrink-0 text-green-400 md:h-5 md:w-5" />
+              <SiSpotify className="h-4 w-4 flex-shrink-0 text-green-400" />
             </span>
           </p>
         </a>
